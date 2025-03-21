@@ -1,270 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Samer Aldawaleeb - Personal Website</title>
-  <meta name="description" content="Official personal page of Samer Aldawaleeb, Staff Software Engineer at HungerStation.">
-  <style>
-    /* BASIC RESET & FONTS */
-    * {
-      margin: 0; 
-      padding: 0; 
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background: #f1f1f1;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    /* HEADER STYLES */
-    header {
-      background: #2d2d2d;
-      color: #fff;
-      padding: 1.5rem 0;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1rem;
-      opacity: 0.8;
-    }
-
-    /* MAIN CONTAINER */
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-    }
-
-    /* INTRO SECTION */
-    .intro {
-      padding: 2rem;
-    }
-    .intro h2 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: #444;
-    }
-    .intro p {
-      margin-bottom: 1rem;
-    }
-
-    /* CONTACT & LINKS SECTION */
-    .contact-links {
-      background: #fafafa;
-      padding: 2rem;
-      border-top: 1px solid #e5e5e5;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-    .contact-block {
-      flex: 1 1 200px;
-    }
-    .contact-block h3 {
-      margin-bottom: 0.5rem;
-      color: #555;
-    }
-    .contact-block p, .contact-block a {
-      display: block;
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
-      word-break: break-word;
-    }
-    .contact-block a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .contact-block a:hover {
-      text-decoration: underline;
-    }
-
-    /* EXPERIENCE SECTION */
-    .experience {
-      padding: 2rem;
-      border-top: 1px solid #e5e5e5;
-    }
-    .experience h2 {
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
-      color: #444;
-    }
-    .job {
-      margin-bottom: 1.5rem;
-    }
-    .job h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.3rem;
-      color: #333;
-    }
-    .job h4 {
-      font-size: 1rem;
-      margin-bottom: 0.3rem;
-      color: #777;
-      font-weight: normal;
-    }
-    .job span {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-size: 0.9rem;
-      color: #999;
-    }
-    .job ul {
-      list-style: disc inside;
-      margin-left: 1rem;
-      margin-top: 0.5rem;
-    }
-    .job li {
-      margin: 0.5rem 0;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #777;
-      padding: 1rem 0;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Personal Resume of Samer Aldawaleeb" />
+    <meta name="author" content="Samer Aldawaleeb" />
+    <title>Samer Aldawaleeb - Resume</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+        rel="stylesheet"
+        type="text/css"
+    />
+    <link
+        href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+        rel="stylesheet"
+        type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
-  <header>
-    <h1>Samer Aldawaleeb</h1>
-    <p>Staff Software Engineer • HungerStation • Riyadh, Saudi Arabia</p>
-  </header>
-
-  <div class="container">
-    <!-- INTRO -->
-    <section class="intro">
-      <h2>About Me</h2>
-      <p>
-        Experienced Staff Software Engineer with a demonstrated history of 
-        working in the information technology and services industry. Skilled 
-        in <strong>Cloud-Native Architecture</strong>, <strong>Fraud Detection</strong>, 
-        <strong>Software Infrastructure</strong>, and more. 
-      </p>
-      <p>
-        I’m passionate about designing and developing scalable, resilient 
-        microservices for mission-critical applications, leveraging modern 
-        cloud platforms like Kubernetes, Docker, and AWS.
-      </p>
-      <p>
-        I hold a B.Sc. in Computer Software Engineering from Philadelphia University, 
-        and am dedicated to continuous learning and knowledge sharing in the tech community.
-      </p>
-    </section>
-
-    <!-- CONTACT & LINKS -->
-    <section class="contact-links">
-      <div class="contact-block">
-        <h3>Contact Info</h3>
-        <p>Mobile: +962795726778</p>
-        <p>Email: <a href="mailto:samerzmd@gmail.com">samerzmd@gmail.com</a></p>
-      </div>
-      <div class="contact-block">
-        <h3>Social & Profiles</h3>
-        <a href="https://www.linkedin.com/in/samerzmd" target="_blank">
-          LinkedIn: linkedin.com/in/samerzmd
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Samer Aldawaleeb</span>
+            <!-- Replace with your own profile image if you wish -->
+            <span class="d-none d-lg-block">
+                <img
+                    class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="assets/img/profile.jpg"
+                    alt="Profile Photo"
+                />
+            </span>
         </a>
-        <a href="https://github.com/samerzmd" target="_blank">
-          GitHub: github.com/samerzmd
-        </a>
-      </div>
-      <div class="contact-block">
-        <h3>Languages & Skills</h3>
-        <p>English (Fluent)</p>
-        <p>Cloud-Native Architecture</p>
-        <p>Fraud Detection</p>
-        <p>Software Infrastructure</p>
-      </div>
-    </section>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- EXPERIENCE -->
-    <section class="experience">
-      <h2>Professional Experience</h2>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Samer
+                    <span class="text-primary">Aldawaleeb</span>
+                </h1>
+                <div class="subheading mb-5">
+                    Riyadh, Saudi Arabia · +962795726778 ·
+                    <a href="mailto:samerzmd@gmail.com">samerzmd@gmail.com</a>
+                </div>
+                <p class="lead mb-5">
+                    I am an experienced Staff Software Engineer with a demonstrated history of
+                    working in the information technology and services industry. Skilled in
+                    Cloud-Native Architecture, Fraud Detection, and Software Infrastructure. 
+                    Currently at HungerStation, driving solutions for high-traffic systems and 
+                    critical integrations. 
+                </p>
+                <div class="social-icons">
+                    <!-- Replace '#' with your actual social links -->
+                    <a class="social-icon" href="https://www.linkedin.com/in/samerzmd" target="_blank"
+                        ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a class="social-icon" href="https://github.com/samerzmd" target="_blank"
+                        ><i class="fab fa-github"></i
+                    ></a>
 
-      <!-- HungerStation -->
-      <div class="job">
-        <h3>هنقرستيشن | HungerStation</h3>
-        <h4>Staff Software Engineer</h4>
-        <span>August 2023 - Present (1 year 8 months)</span>
-        <ul>
-          <li>Architecting & developing cloud-native solutions (Kubernetes, Docker, microservices)</li>
-          <li>Driving fraud prevention & data consistency strategies in payment and fulfillment</li>
-          <li>Implementing observability, monitoring, and real-time tracking with Grafana, Prometheus, and Datadog</li>
-          <li>Overseeing cross-team feature integrations, designing distributed architectures</li>
-          <li>Automating deployments and managing cloud infrastructure with Terraform and Helm</li>
-        </ul>
-      </div>
+                    <!-- Twitter (Example) -->
+                    <a class="social-icon" href="https://x.com/samerzmd" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Facebook (Example) -->
+                    <a class="social-icon" href="https://facebook.com/dawalib" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Instagram (Example) -->
+                    <a class="social-icon" href="https://instagram.com/samerzmd" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
 
-      <div class="job">
-        <h4>Senior Software Engineer</h4>
-        <span>December 2018 - August 2023 (4 years 9 months)</span>
-        <ul>
-          <li>Led microservices migrations, enhancing scalability and deployment efficiency</li>
-          <li>Improved order processing and reduced latency in high-traffic environments</li>
-          <li>Implemented critical real-time tracking solutions and integrated Tawakkalna API during COVID-19 lockdown</li>
-          <li>Enhanced payment fraud detection and database performance with PostgreSQL optimizations</li>
-        </ul>
-      </div>
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
 
-      <!-- Hello World Kids -->
-      <div class="job">
-        <h3>Hello World Kids</h3>
-        <h4>Senior Software Engineer</h4>
-        <span>April 2018 - December 2018 (9 months)</span>
-        <ul>
-          <li>Developed interactive educational software, improving engagement for children</li>
-          <li>Collaborated with educators to integrate coding curricula into digital platforms</li>
-        </ul>
-      </div>
+                <!-- HungerStation -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Staff Software Engineer</h3>
+                        <div class="subheading mb-3">HungerStation</div>
+                        <p>
+                            - Cloud-Native Engineering with Kubernetes, Docker, and microservices<br/>
+                            - Leading fraud detection and payment integrity solutions<br/>
+                            - Enhancing system observability with Grafana, Prometheus, Datadog<br/>
+                            - Cross-team collaboration for mission-critical feature delivery<br/>
+                            - Infrastructure as Code (Terraform, Helm) for robust cloud deployments
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Aug 2023 - Present</span></div>
+                </div>
 
-      <!-- BlackStone eIT -->
-      <div class="job">
-        <h3>BlackStone eIT</h3>
-        <h4>Senior Software Developer</h4>
-        <span>May 2017 - April 2018 (1 year)</span>
-        <ul>
-          <li>Designed & maintained high-quality software applications, front-end & back-end</li>
-          <li>Collaborated with cross-functional teams to deliver robust, client-focused solutions</li>
-        </ul>
-      </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Senior Software Engineer</h3>
+                        <div class="subheading mb-3">HungerStation</div>
+                        <p>
+                            - Led monolith to microservices migration, improving scalability and deployment<br/>
+                            - Built real-time tracking solutions, reducing order loss and improving delivery accuracy<br/>
+                            - Enhanced payment fraud detection; optimized PostgreSQL performance and Redis caching<br/>
+                            - Integrated Tawakkalna API during COVID-19 for driver permits
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Dec 2018 - Aug 2023</span></div>
+                </div>
 
-      <!-- Kaizen Plus -->
-      <div class="job">
-        <h3>Kaizen Plus</h3>
-        <h4>Software Engineer</h4>
-        <span>May 2016 - May 2017 (1 year 1 month)</span>
-        <ul>
-          <li>Developed custom software for specific client needs, including eCommerce and asset management</li>
-          <li>Created responsive web and mobile applications, improving accessibility and client engagement</li>
-        </ul>
-      </div>
+                <!-- Hello World Kids -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Senior Software Engineer</h3>
+                        <div class="subheading mb-3">Hello World Kids</div>
+                        <p>
+                            - Developed interactive educational software for children<br/>
+                            - Integrated coding curricula into digital platforms, improving engagement
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Apr 2018 - Dec 2018</span></div>
+                </div>
 
-      <!-- CATEC -->
-      <div class="job">
-        <h3>CATEC</h3>
-        <h4>Software Developer</h4>
-        <span>May 2014 - May 2016 (2 years 1 month)</span>
-        <ul>
-          <li>Implemented enterprise software solutions and IoT-driven smart waste management systems</li>
-          <li>Collaborated with designers, PMs, and fellow developers to deliver client projects successfully</li>
-        </ul>
-      </div>
-    </section>
-  </div>
+                <!-- BlackStone eIT -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Senior Software Developer</h3>
+                        <div class="subheading mb-3">BlackStone eIT</div>
+                        <p>
+                            - Designed, developed, and maintained high-quality software solutions<br/>
+                            - Oversaw front-end and back-end services, ensuring robust, client-focused delivery
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">May 2017 - Apr 2018</span></div>
+                </div>
 
-  <footer>
-    <p>© 2025 Samer Aldawaleeb - All rights reserved.</p>
-  </footer>
+                <!-- Kaizen Plus -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Software Engineer</h3>
+                        <div class="subheading mb-3">Kaizen Plus</div>
+                        <p>
+                            - Built custom solutions including eCommerce and asset management systems<br/>
+                            - Developed responsive web and mobile applications for diverse client needs
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">May 2016 - May 2017</span></div>
+                </div>
+
+                <!-- CATEC -->
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Software Developer</h3>
+                        <div class="subheading mb-3">CATEC</div>
+                        <p>
+                            - Implemented enterprise software and IoT-powered smart waste management<br/>
+                            - Collaborated with cross-functional teams to deliver custom client projects
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">May 2014 - May 2016</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+              <h2 class="mb-5">Education</h2>
+              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                  <h3 class="mb-0">Philadelphia University</h3>
+                  <div class="subheading mb-3">Bachelor of Science, Software Engineering</div>
+                  <p>
+                    My four years at Philadelphia University laid the groundwork for my passion 
+                    in building scalable, resilient software systems. I explored everything 
+                    from the fundamentals of data structures to advanced application design, 
+                    completing a capstone project focused on building microservices with 
+                    real-world use cases. This immersive program fostered my love for 
+                    continuous learning and creative problem-solving, setting the stage for 
+                    the cloud-native architectures I thrive on today.
+                  </p>
+                </div>
+                <div class="flex-shrink-0">
+                  <span class="text-primary">2011 - 2015</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <hr class="m-0" />
+
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+                <ul class="list-inline dev-icons">
+                    <!-- Feel free to add or remove icons to reflect your actual skills -->
+                    <li class="list-inline-item"><i class="fab fa-golang"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+                </ul>
+                <div class="subheading mb-3">Workflow</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Cloud-Native Architecture (Kubernetes, Docker)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Fraud Detection & High-Traffic Systems
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Observability & Monitoring (Grafana, Prometheus, Datadog)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Agile Development & Cross-Functional Collaboration
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>
+                    Away from the keyboard, I’m an avid explorer of new technologies and an
+                    eager experimenter in the kitchen—my go-to pastime is creating fusion dishes
+                    that blend local flavors from my travels with modern techniques. Discovering
+                    vibrant cultures around the world continues to fuel my creativity and keep me 
+                    inspired both personally and professionally.
+                </p>
+                <p>
+                    I’m also passionate about self-improvement and productivity, always on the 
+                    lookout for innovative ways to optimize my daily routine and leverage new 
+                    cloud solutions for personal projects. Whether I’m delving into an online 
+                    course on AI, cycling along scenic routes, or reading about emerging dev 
+                    trends, I enjoy finding the parallels between these experiences and my 
+                    day-to-day coding adventures.
+                </p>
+                <p class="mb-0">
+                    Ultimately, I believe in continuous learning—and that genuine curiosity
+                    about the world drives both my professional growth and my personal 
+                    satisfaction.
+                </p>
+            </div>
+        </section>
+        
+        <hr class="m-0" />
+
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards &amp; Certifications</h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Graduated 1<sup>st</sup> in class (Philadelphia University, 2015)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        The Best Software in 2015 - Philadelphia University
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Android Developer (Certification)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Learning the OWASP Top 10 (Certification)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Cloud Native Application Architecture Nanodegree Program
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Prompt Engineering Course Certificate from Vanderbilt University
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
